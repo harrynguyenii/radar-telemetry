@@ -1,0 +1,6 @@
+# synth.ys
+read_verilog radar_correlator.v
+synth -top radar_correlator
+abc -lut 4
+stat
+write_json radar_synth.json
